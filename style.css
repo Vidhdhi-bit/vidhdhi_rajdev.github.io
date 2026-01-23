@@ -232,3 +232,79 @@ footer {
     border-color: var(--accent-purple);
     box-shadow: 0 15px 40px rgba(167, 139, 250, 0.2);
 }
+/* TESTIMONIALS */
+.testimonials {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.testimonial-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: var(--bg-card);
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid #1f2933;
+    position: relative;
+}
+
+.testimonial-slide {
+    display: none;
+}
+
+.testimonial-slide.active {
+    display: block;
+}
+
+.quote {
+    font-size: 20px;
+    color: var(--text-main);
+    margin-bottom: 30px;
+}
+
+.client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+    color: #020617;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.client h4 {
+    margin: 0;
+}
+
+.client span {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+/* DOTS */
+.dots {
+    margin-top: 25px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background: #334155;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: var(--accent-blue);
+}
