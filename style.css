@@ -112,24 +112,52 @@ body {
 }
 
 /* SKILLS */
+/* SKILLS – CARD STYLE */
 .skills {
-    padding: 60px;
-    text-align: center;
+    padding: 80px 60px;
 }
 
 .skills h2 {
-    margin-bottom: 25px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.skill-list span {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 18px;
-    background: var(--bg-card);
-    border-radius: 20px;
+.skill-title {
+    margin: 50px 0 25px;
+    font-size: 24px;
     color: var(--accent-blue);
-    border: 1px solid #1f2933;
+    border-left: 4px solid var(--accent-purple);
+    padding-left: 15px;
 }
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+.skill-card {
+    background: var(--bg-card);
+    padding: 30px 20px;
+    border-radius: 18px;
+    text-align: center;
+    border: 1px solid #1f2933;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-card span {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-blue);
+    box-shadow: 0 15px 35px rgba(56, 189, 248, 0.2);
+}
+
 
 /* PROJECTS */
 .projects {
