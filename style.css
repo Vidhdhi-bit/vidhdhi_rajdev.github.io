@@ -107,6 +107,12 @@ body {
 }
 
 /* HERO IMAGE */
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
 .hero-image img {
     width: 320px;
     height: 320px;
